@@ -1,11 +1,15 @@
 @import "webfont";
 
+$base-g: #2DAE86;
+
 body {
 	@include font-major;
 
 	font-weight      : 300;
 	font-size        : 16px;
 	background-image : linear-gradient(0deg, #5A5F95 0%, #2DC88B 100%);
+
+	* { box-sizing: border-box; }
 }
 
 .page-header {
@@ -26,15 +30,17 @@ body {
 	overflow       : hidden;
 	white-space    : nowrap;
 	word-break     : break-all;
-	width          : 23.5em;
+	width          : 23.2em;
 	padding        : .3em .8em;
 	margin         : 0 auto;
 	position       : relative;
 	color          : lime;
+	letter-spacing : 0em;
+	box-sizing     : content-box;
 
 	background: black;
 
-	animation: typing 6.6s steps(43, end) 0.5s 1;
+	animation: typing 6s steps(42, end) 0.5s 1;
 
 	&:after {
 		content  : "_";
@@ -43,7 +49,6 @@ body {
 		
 		animation: blink .6s linear 0 infinite;
 	}
-	
 }
 
 .rule-resource { color: steelblue; }
@@ -64,4 +69,51 @@ body {
 
 @keyframes blink {
 	to { opacity: 0; }
+}
+
+#mc_embed_signup {
+	color      : $base-g;
+	width      : 32em;
+	height     : 8em;
+	padding    : 1.5em;
+	margin     : 2.5em auto;
+	background : rgba(255,255,255,.1);
+	text-align : left;
+	
+	label { color: #fff; }
+	
+	.input-wrap { margin-top: .5em; display: flex; }
+	.input-button { display: inline-block; }
+
+	.email,.button {
+		border        : none;
+		border-radius : 2px;
+		height        : 3em;
+		line-height   : 3em;
+		font-size     : .8em;
+	}
+
+	.email {
+		width      : 70%;
+		padding    : 1em;
+		transition : all .2s ease-in-out;
+		border     : 0 solid transparent;
+
+		&:focus { 
+			border-bottom : 4px solid $base-g; 
+			outline       : none;
+			box-shadow    : 0 0 5px transparentize(lighten($base-g,10%),.2);
+		}
+	}
+
+	.input-button { width: 28%; margin-left: 2%; }
+
+	.button {
+		width      : 100%;
+		background : $base-g;
+		color      : #fff;
+		transition : all .2s ease-in-out;
+
+		&:hover { background: lighten($base-g, 10%); border-bottom: 4px solid $base-g; }
+	}
 }

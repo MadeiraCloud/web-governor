@@ -213,6 +213,8 @@ body {
   font-size: 16px;
   background-image: -webkit-linear-gradient(90deg, #5A5F95 0%, #2DC88B 100%);
   background-image: linear-gradient(0deg, #5A5F95 0%, #2DC88B 100%); }
+  body * {
+    box-sizing: border-box; }
 
 .page-header {
   height: 500px;
@@ -236,14 +238,16 @@ body {
   overflow: hidden;
   white-space: nowrap;
   word-break: break-all;
-  width: 23.5em;
+  width: 23.2em;
   padding: .3em .8em;
   margin: 0 auto;
   position: relative;
   color: lime;
+  letter-spacing: 0em;
+  box-sizing: content-box;
   background: black;
-  -webkit-animation: typing 6.6s steps(43, end) 0.5s 1;
-          animation: typing 6.6s steps(43, end) 0.5s 1; }
+  -webkit-animation: typing 6s steps(42, end) 0.5s 1;
+          animation: typing 6s steps(42, end) 0.5s 1; }
   .type-rule:after {
     content: "_";
     position: absolute;
@@ -279,3 +283,50 @@ body {
 @keyframes blink {
   to {
     opacity: 0; } }
+
+#mc_embed_signup {
+  color: #2DAE86;
+  width: 32em;
+  height: 8em;
+  padding: 1.5em;
+  margin: 2.5em auto;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: left; }
+  #mc_embed_signup label {
+    color: #fff; }
+  #mc_embed_signup .input-wrap {
+    margin-top: .5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  #mc_embed_signup .input-button {
+    display: inline-block; }
+  #mc_embed_signup .email, #mc_embed_signup .button {
+    border: none;
+    border-radius: 2px;
+    height: 3em;
+    line-height: 3em;
+    font-size: .8em; }
+  #mc_embed_signup .email {
+    width: 70%;
+    padding: 1em;
+    -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+    border: 0 solid transparent; }
+    #mc_embed_signup .email:focus {
+      border-bottom: 4px solid #2DAE86;
+      outline: none;
+      box-shadow: 0 0 5px rgba(64, 206, 162, 0.8); }
+  #mc_embed_signup .input-button {
+    width: 28%;
+    margin-left: 2%; }
+  #mc_embed_signup .button {
+    width: 100%;
+    background: #2DAE86;
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out; }
+    #mc_embed_signup .button:hover {
+      background: #40cea2;
+      border-bottom: 4px solid #2DAE86; }
