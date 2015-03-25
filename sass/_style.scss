@@ -29,6 +29,21 @@ body {
 
 	h3 { font-size: 4em; font-weight: 100;  line-height: 2em; margin: 0; }
 	h5 { font-size: 1.4em; font-weight: 300; opacity: .7;}
+
+	.page-header-content { 
+		transition : opacity .4s ease-in; 
+		h5 { transition : margin-top .4s ease-in; }
+	}
+
+	.loading & .page-header-content {
+		opacity  : 0 ;
+		h5 { margin-top: 20px; }
+	}
+
+	.loaded & .page-header-content { 
+		opacity: 1; 
+		h5 { margin-top: 0; } 
+	}
 }
 
 .type-rule {
@@ -47,7 +62,7 @@ body {
 
 	background: black;
 
-	animation: typing 6s steps(42, end) 0.5s 1;
+	animation: typing 6s steps(42, end) 2s 1;
 
 	&:after {
 		content  : "_";

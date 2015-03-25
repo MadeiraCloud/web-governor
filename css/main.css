@@ -234,6 +234,20 @@ body {
     font-size: 1.4em;
     font-weight: 300;
     opacity: .7; }
+  .page-header .page-header-content {
+    -webkit-transition: opacity .4s ease-in;
+            transition: opacity .4s ease-in; }
+    .page-header .page-header-content h5 {
+      -webkit-transition: margin-top .4s ease-in;
+              transition: margin-top .4s ease-in; }
+  .loading .page-header .page-header-content {
+    opacity: 0; }
+    .loading .page-header .page-header-content h5 {
+      margin-top: 20px; }
+  .loaded .page-header .page-header-content {
+    opacity: 1; }
+    .loaded .page-header .page-header-content h5 {
+      margin-top: 0; }
 
 .type-rule {
   font-family: "Consolas","Monaco","Ubuntu Mono",monospace !important;
@@ -249,8 +263,8 @@ body {
   letter-spacing: 0em;
   box-sizing: content-box;
   background: black;
-  -webkit-animation: typing 6s steps(42, end) 0.5s 1;
-          animation: typing 6s steps(42, end) 0.5s 1; }
+  -webkit-animation: typing 6s steps(42, end) 2s 1;
+          animation: typing 6s steps(42, end) 2s 1; }
   .type-rule:after {
     content: "_";
     position: absolute;
