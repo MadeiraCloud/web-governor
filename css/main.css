@@ -210,4 +210,72 @@ body {
   font-family: 'raleway', 'Helvetica Neue', Arial, "Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei", sans-serif;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(90deg, #5A5F95 0%, #2DC88B 100%);
+  background-image: linear-gradient(0deg, #5A5F95 0%, #2DC88B 100%); }
+
+.page-header {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff; }
+  .page-header h3 {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 2em;
+    margin: 2em 0 0 0; }
+  .page-header h5 {
+    font-size: 1.4em;
+    font-weight: 300;
+    opacity: .7; }
+
+.type-rule {
+  font-family: "Consolas","Monaco","Ubuntu Mono",monospace !important;
+  font-size: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  width: 23.5em;
+  padding: .3em .8em;
+  margin: 0 auto;
+  position: relative;
+  color: lime;
+  background: black;
+  -webkit-animation: typing 6.6s steps(43, end) 0.5s 1;
+          animation: typing 6.6s steps(43, end) 0.5s 1; }
+  .type-rule:after {
+    content: "_";
+    position: absolute;
+    right: 0.2em;
+    -webkit-animation: blink .6s linear 0 infinite;
+            animation: blink .6s linear 0 infinite; }
+
+.rule-resource {
+  color: steelblue; }
+
+.rule-select {
+  color: orange; }
+
+.cursor {
+  position: absolute;
+  right: 0em;
+  height: 1em;
+  width: .8em;
+  background: black; }
+
+@-webkit-keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@-webkit-keyframes blink {
+  to {
+    opacity: 0; } }
+
+@keyframes blink {
+  to {
+    opacity: 0; } }
