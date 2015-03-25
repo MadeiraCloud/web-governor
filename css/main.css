@@ -342,8 +342,8 @@ body {
 
 .curve-bg {
   position: absolute;
-  bottom: -10%;
   left: 0;
+  top: 0;
   width: 100%; }
   .curve-bg svg {
     display: block;
@@ -357,23 +357,23 @@ body {
         -ms-transform-origin: center 60px;
             transform-origin: center 60px; }
   .curve path:nth-child(1) {
+    -webkit-animation: curve 6s linear 0s infinite;
+            animation: curve 6s linear 0s infinite; }
+  .curve path:nth-child(2) {
     -webkit-animation: curve 6s linear 1.2s infinite;
             animation: curve 6s linear 1.2s infinite; }
-  .curve path:nth-child(2) {
+  .curve path:nth-child(3) {
     -webkit-animation: curve 6s linear 2.4s infinite;
             animation: curve 6s linear 2.4s infinite; }
-  .curve path:nth-child(3) {
+  .curve path:nth-child(4) {
     -webkit-animation: curve 6s linear 3.6s infinite;
             animation: curve 6s linear 3.6s infinite; }
-  .curve path:nth-child(4) {
+  .curve path:nth-child(5) {
     -webkit-animation: curve 6s linear 4.8s infinite;
             animation: curve 6s linear 4.8s infinite; }
-  .curve path:nth-child(5) {
+  .curve path:nth-child(6) {
     -webkit-animation: curve 6s linear 6s infinite;
             animation: curve 6s linear 6s infinite; }
-  .curve path:nth-child(6) {
-    -webkit-animation: curve 6s linear 7.2s infinite;
-            animation: curve 6s linear 7.2s infinite; }
 
 @-webkit-keyframes curve {
   0% {
@@ -384,7 +384,7 @@ body {
   50% {
     -webkit-transform: rotateX(360deg) scaleY(.8);
             transform: rotateX(360deg) scaleY(.8);
-    stroke-opacity: .4; }
+    stroke-opacity: .5; }
 
   70% {
     /* transform: skewY(-2deg); */ }
@@ -403,7 +403,7 @@ body {
   50% {
     -webkit-transform: rotateX(360deg) scaleY(.8);
             transform: rotateX(360deg) scaleY(.8);
-    stroke-opacity: .4; }
+    stroke-opacity: .5; }
 
   70% {
     /* transform: skewY(-2deg); */ }
