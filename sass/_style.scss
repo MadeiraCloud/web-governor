@@ -62,7 +62,7 @@ body {
 
 	background: black;
 
-	animation: typing 6s steps(42, end) 2s 1;
+	animation: typing 6s steps(42, end) 1.1s 1;
 
 	&:after {
 		content  : "_";

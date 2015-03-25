@@ -263,8 +263,8 @@ body {
   letter-spacing: 0em;
   box-sizing: content-box;
   background: black;
-  -webkit-animation: typing 6s steps(42, end) 2s 1;
-          animation: typing 6s steps(42, end) 2s 1; }
+  -webkit-animation: typing 6s steps(42, end) 1.1s 1;
+          animation: typing 6s steps(42, end) 1.1s 1; }
   .type-rule:after {
     content: "_";
     position: absolute;
