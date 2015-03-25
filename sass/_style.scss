@@ -110,11 +110,17 @@ body {
 		padding    : 1em;
 		transition : all .2s ease-in-out;
 		border     : 0 solid transparent;
+		background : rgba(255,255,255,.8);
+
+		&:hover {
+			background : #fff;
+		}
 
 		&:focus { 
 			border-bottom : 4px solid $base-g; 
 			outline       : none;
 			box-shadow    : 0 0 5px transparentize(lighten($base-g,10%),.2);
+			background    : #fff;
 		}
 	}
 
@@ -167,8 +173,8 @@ $curveCount: 6;
 } 
 
 .hiw {
-	height  : 600px;
-	padding : 10vw;
+	// height  : 600px;
+	padding: 80px 30px;
 }
 
 .hiw-header {
@@ -177,3 +183,39 @@ $curveCount: 6;
 	color      : $base-g;
 }
 
+.hiw-content {
+	display : flex;
+}
+
+.text-wrap {
+	width   : 60%;
+}
+
+.animation-wrap {
+	width    : 40%;
+	position : relative;
+
+	#app {
+	  position: absolute;
+	  top: 10px;
+	  left: 0;
+	}
+}
+
+.hiw-block {
+	padding : 55px 0;
+	// margin  : 0 auto;
+
+	h5 { font-size: 2.4em; font-weight: 300; color: $dark-p; margin: 10px 0 0 0; }
+	p { font-size: 1.2em; color: $base-p; }
+}
+
+footer {
+	width      : 100%;
+	height     : 40px;
+	font-size  : 14px;
+	text-align : center;
+	padding    : 10px;
+	color      : $base-g;
+	background : #eaeaea;
+}

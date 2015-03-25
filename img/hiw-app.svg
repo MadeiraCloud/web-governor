@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="280" viewBox="0 0 420 280">
+  <defs>
+    <rect id="subnet" width="84" height="224" rx="2"/>
+  </defs>
+  <symbol id="instance">
+    <rect width="54" height="54" fill="#E4F2FD" stroke="#9DC8EC" stroke-width="2" x="1" y="1" rx="6"/>
+    <ellipse cx="46" cy="46" fill="#7ED321" rx="2.665" ry="2.676"/>
+    <rect width="54" height="40" fill="#fff" stroke="#9DC8EC" stroke-width="2" rx="6" x="1" y="1"/>
+  </symbol>
+  <symbol id="rds">
+    <g stroke="#D3AFDA" stroke-width="2" transform="translate(2.000000, 2.000000)">
+      <path d="M54,33.8593298 C54,44.9050248 41.9116882,53.8593298 27,53.8593298 C12.0883118,53.8593298 0,44.9050248 0,33.8593298 L0,20.5259965 L6.87504143,20.5259965 C11.8189264,16.4343341 19.0035017,13.8593298 27,13.8593298 C34.9964983,13.8593298 42.1810736,16.4343341 47.1249586,20.5259965 L54,20.5259965 L54,33.8593298 Z" id="Oval-14" fill="#F4E6F6"/>
+      <ellipse id="Oval-13" fill="#FFFFFF" cx="27" cy="20" rx="27" ry="20"/>
+    </g>
+  </symbol>
+  <symbol id="line">
+    <path stroke="#959AD3" stroke-width="7" d="M167.097 40.57h47.464"/>
+    <path stroke="#fff" stroke-width="3" d="M167.097 40.47h47.464"/>
+  </symbol>
+  <g fill="none">
+    <g id="subnet-layer" transform="translate(100,20)">
+      <g id="subnet-1">
+        <use fill="#fff" stroke="#61B1F3" stroke-width="2" x="20" xlink:href="#subnet"/>
+      </g>
+      <g id="subnet-2">
+        <use fill="#fff" stroke="#BCBFE5" stroke-width="2" x="124" xlink:href="#subnet"/>
+      </g>
+      <g id="subnet-3">
+        <use fill="#fff" stroke="#BCBFE5" stroke-width="2" x="228" xlink:href="#subnet"/>
+      </g>
+    </g>
+    <g id="node-layer" transform="translate(100,0)">
+      <g id="instance-1">
+        <use x="35" y="33" xlink:href="#instance"/>
+      </g>
+      <g id="instance-2">
+        <use x="33" y="106" xlink:href="#instance"/>
+      </g>
+      <g id="instance-3">
+        <use x="33" y="175" xlink:href="#instance"/>
+      </g>
+      <g id="instance-4">
+        <use x="137" y="33" xlink:href="#instance"/>
+      </g>
+      <g id="instance-5">
+        <use x="137" y="106" xlink:href="#instance"/>
+      </g>
+      <g id="instance-6">
+        <use x="137" y="175" xlink:href="#instance"/>
+      </g>
+      <g id="rds-1">
+        <use x="239" y="33" xlink:href="#rds"/>
+      </g>
+      <g id="rds-2">
+        <use x="239" y="175" xlink:href="#rds"/>
+      </g>
+    </g>
+    <g id="line-layer" transform="translate(23,20)">
+          <g id="line-1">
+            <path stroke="#61B1F3" stroke-width="7" d="M54.8 112.563h10.61c4.42 0 8.002-3.573 8.002-8.004V48.512c0-4.42 3.583-8.003 8.007-8.003h30.074"/>
+            <path stroke="#fff" stroke-width="3" d="M54.8 112.563h10.61c4.42 0 8.002-3.573 8.002-8.004V48.512c0-4.42 3.583-8.003 8.007-8.003h30.074"/>
+          </g>
+          <g id="line-3">
+            <path stroke="#61B1F3" stroke-width="7" d="M54.8 112.763h10.61c4.42 0 8.002 3.573 8.002 8.004v56.046c0 4.42 3.583 8.003 8.007 8.003h30.074"/>
+            <path stroke="#fff" stroke-width="3" d="M54.8 112.763h10.61c4.42 0 8.002 3.573 8.002 8.004v56.046c0 4.42 3.583 8.003 8.007 8.003h30.074"/>
+          </g>
+          <g id="line-2">
+            <path stroke="#61B1F3" stroke-width="7" d="M54.8 112.763h56.694"/>
+            <path stroke="#fff" stroke-width="3" d="M54.8 112.662l56.694.002"/>
+          </g>
+          <g id="line-4">
+             <use y="73" xlink:href="#line"/>
+          </g>
+          <g id="line-5">
+             <use y="146" xlink:href="#line"/>
+          </g>
+          <g id="line-6">
+             <use x="103" xlink:href="#line"/>
+          </g>
+          <g id="line-7">
+             <use x="103" y="145" xlink:href="#line"/>
+          </g>
+          <!-- <g id="line-8">
+           <use xlink:href="#line"/>
+                  </g> -->
+        </g>
+  </g>
+</svg>
