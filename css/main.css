@@ -215,7 +215,8 @@ body {
     box-sizing: border-box; }
 
 .container {
-  min-height: 4400px; }
+  min-height: 100%;
+  background: #44476D; }
 
 .page-header {
   height: 60vw;
@@ -435,8 +436,10 @@ body {
     stroke-opacity: 0; } }
 
 .hiw {
-  height: 2800px;
-  position: relative; }
+  height: 2700px;
+  position: relative;
+  background-image: -webkit-linear-gradient(270deg, #EDEAF6 0%, #E6FCF3 100%);
+  background-image: linear-gradient(-180deg, #EDEAF6 0%, #E6FCF3 100%); }
 
 .hiw-header {
   text-align: center;
@@ -458,7 +461,7 @@ body {
 
 .hiw-block {
   padding: 55px 0;
-  height: 600px;
+  height: 550px;
   width: 540px; }
   .hiw-block h5 {
     font-size: 2.4em;
@@ -582,8 +585,16 @@ body {
 
 .subscribe {
   width: 100%;
-  height: 100vh;
-  background: red; }
+  height: 500px;
+  padding: 25% 0; }
+  .subscribe h3 {
+    text-align: center;
+    font-size: 2.4em;
+    color: #fff;
+    font-weight: 300; }
+  .subscribe #mc_embed_signup {
+    padding: 3vw 2vw 0 2vw;
+    margin: 8% auto; }
 
 footer {
   width: 100%;

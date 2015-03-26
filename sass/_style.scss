@@ -14,7 +14,7 @@ body {
 	* { box-sizing: border-box; }
 }
 
-.container { min-height: 4400px; }
+.container { min-height: 100%; background: $dark-p; }
 
 .page-header {
 	height      : 60vw;
@@ -191,8 +191,9 @@ $curveCount: 6;
 } 
 
 .hiw {
-	height  : 2800px;
+	height  : 2700px;
 	position : relative;
+	background-image: linear-gradient(-180deg, #EDEAF6 0%, #E6FCF3 100%);
 }
 
 .hiw-header {
@@ -215,7 +216,7 @@ $curveCount: 6;
 
 .hiw-block {
 	padding   : 55px 0;
-	height    : 600px;
+	height    : 550px;
 	width     : 540px;
 	// margin : 0 auto;
 
@@ -293,9 +294,17 @@ $curveCount: 6;
 }
 
 .subscribe {
-	width      : 100%;
-	height     : 100vh;
-	background : red;
+	width   : 100%;
+	height  : 500px;
+	padding : 25% 0;
+
+	h3 { text-align: center; font-size: 2.4em; color: #fff; font-weight: 300; }
+	
+	#mc_embed_signup {
+	  padding : 3vw 2vw 0 2vw;
+	  margin  : 8% auto;
+	}
+
 }
 
 footer {
