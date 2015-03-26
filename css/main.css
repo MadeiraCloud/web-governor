@@ -435,7 +435,7 @@ body {
     stroke-opacity: 0; } }
 
 .hiw {
-  height: 2400px;
+  height: 2800px;
   position: relative; }
 
 .hiw-header {
@@ -444,7 +444,6 @@ body {
   color: #2DAE86;
   margin: 60px 0;
   width: 100%;
-  background: #fff;
   line-height: 80px; }
 
 .hiw-content {
@@ -504,6 +503,12 @@ body {
   stroke: #DCE1DF;
   -webkit-animation: alert2 .5s infinite;
           animation: alert2 .5s infinite; }
+
+#line-alert path {
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px;
+  -webkit-animation: alert3 1s infinite;
+          animation: alert3 1s infinite; }
 
 #status rect:nth-child(1) {
   -webkit-animation: status-check 1s steps(2, end) 0s infinite;
@@ -566,6 +571,19 @@ body {
 @keyframes alert2 {
   to {
     stroke: #F46642; } }
+
+@-webkit-keyframes alert3 {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes alert3 {
+  to {
+    stroke-dashoffset: 0; } }
+
+.subscribe {
+  width: 100%;
+  height: 100vh;
+  background: red; }
 
 footer {
   width: 100%;

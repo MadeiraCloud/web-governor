@@ -191,8 +191,7 @@ $curveCount: 6;
 } 
 
 .hiw {
-	height  : 2400px;
-	// padding: 80px 10%;
+	height  : 2800px;
 	position : relative;
 }
 
@@ -202,7 +201,6 @@ $curveCount: 6;
 	color       : $base-g;
 	margin      : 60px 0;
 	width       : 100%;
-	background  : #fff;
 	line-height : 80px;
 }
 
@@ -264,6 +262,12 @@ $curveCount: 6;
 	animation: alert2 .5s infinite;
 }
 
+#line-alert path {
+	stroke-dasharray : 400px;
+	stroke-dashoffset: 400px;
+	animation        : alert3 1s infinite;
+}
+
 @for $i from 1 through 6 {
 	#status rect:nth-child(#{$i}) {
 		animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
@@ -283,6 +287,16 @@ $curveCount: 6;
 	to { stroke: $base-r; }
 }
 
+@keyframes alert3 {
+	// to { stroke-width: 7; }
+	to { stroke-dashoffset:0; }
+}
+
+.subscribe {
+	width      : 100%;
+	height     : 100vh;
+	background : red;
+}
 
 footer {
 	width      : 100%;
