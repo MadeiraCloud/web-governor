@@ -1,0 +1,29 @@
+                        <svg id="policy" xmlns="http://www.w3.org/2000/svg" width="242" height="266" viewBox="0 0 242 266" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <path id="a" d="M0 1.992C0 .892.893 0 2.003 0h235.994C239.103 0 240 .904 240 1.992v260.016c0 1.1-.893 1.992-2.003 1.992H2.003C.897 264 0 263.096 0 262.008V1.992z"/>
+                            </defs>
+                            <g fill="none">
+                                <g transform="translate(-1111 -1137) translate(1112 1138)">
+                                    <use fill="#fff" xlink:href="#a"/>
+                                    <use stroke="#C2D8CC" stroke-width="2" xlink:href="#a"/>
+                                </g>
+                                <text fill="#2DAE86" font-family="Consolas" font-size="16" transform="translate(-1111 -1137) translate(1112 1138)">
+                                    <tspan x="16" y="25">
+                                        Policy
+                                    </tspan>
+                                </text>
+                                <path stroke="#C2D7CC" stroke-width="2" d="M17 42h208" stroke-linecap="square"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 76h168"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 81.215v-10"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 111.215v-10"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 141.215v-10"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 171.215v-10"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 201.215v-10"/>
+                                <path stroke="#7ED321" stroke-width="10" d="M211 231.215v-10"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 106h168"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 136h168"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 166h168"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 196h168"/>
+                                <path stroke="#DCE1DF" stroke-width="10" d="M17 226h168"/>
+                            </g>
+                        </svg>
