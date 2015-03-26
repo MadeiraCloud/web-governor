@@ -39,7 +39,7 @@
             <h3>CloudFielder</h3>
             <div class="page-header-content">
                 <h5>Get your Cloud Network Policy ensured, in a breeze</h5>
-                <p class="type-rule">all <span class="rule-resource">instance.tag=</span><span class="rule-select">web</span> in <span class="rule-resource">subnet.type=</span><span class="rule-select">public</span><span class="cursor"></span></p>
+                <p class="type-rule">all <span class="rule-resource">instance.tag</span>=<span class="rule-select">web</span> in <span class="rule-resource">subnet.type</span>=<span class="rule-select">public</span><span class="cursor"></span></p>
                 <div id="mc_embed_signup">
                     <label for="mce-EMAIL">Join the beta list:</label>
                     <form action="//visualops.us10.list-manage.com/subscribe/post?u=df7db919117ce17f85640c9f0&amp;id=9692d8b4c1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -55,29 +55,29 @@
             </div>
             </header>
             <section class="hiw">
-                <header class="hiw-header">How it Works</header>
-                <div class="hiw-content">
+                <header class="hiw-header skrollable skrollable-between" data-anchor-target=".hiw" data-0="position: absolute; top:0px;" data-100-top="position:fixed; top:0px;font-size:3em; margin-top:80px;" data-top="font-size:2em;margin-top:40px;" data--100-top-bottom="position: absolute;" data--2200-top="position:absolute;">How it Works</header>
+                <div class="hiw-content" id="skrollr-body">
                     <div class="text-wrap">
-                        <article class="hiw-block" id="step1">
+                        <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="opacity:0; margin-top:200px; position:relative; display:block;" data-300-top="position: fixed; top:200px;" data-100-top="opacity:1;margin-top:0px;" data--400-top="top:200px;"data--500-top="opacity:0;display:none;top:-200px" id="step1">
                             <h5>Define Policy Rules for your Cloud Infrastructure</h5>
                             <p>Use our predefined libary</p>
                             <p>Or write your own rules in a human-friendly way</p>
                         </article>
-                        <article class="hiw-block" id="step2">
+                        <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="display:none; opacity:0; margin-top:200px; position:relative;" data--500-top="display:block; position: fixed; top:200px;" data--600-top="opacity:1;margin-top:0px;" data--1000-top="top:200px;" data--1100-top="opacity:0;display:none;top:-200px;" id="step2">
                             <h5>Policy Monitored around-the-clock, While you Sit Back and Relax</h5>
                             <p>Periodical monitoring report</p>
                         </article>
-                        <article class="hiw-block" id="step3">
+                        <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="display:none; opacity:0; margin-top:200px; position:relative;" data--1100-top="display:block; position: fixed; top:200px;" data--1200-top="opacity:1;margin-top:0px;" data--1600-top="top:200px;" data--1700-top="opacity:0;display:none;top:-200px;" id="step3">
                             <h5>Instant Alert in case of any Policy Voilation</h5>
                             <p>If something is off, we would be the first to know</p>
                         </article>
-                        <article class="hiw-block" id="step4">
+                        <article  class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="display:none; opacity:0; margin-top:200px; position:relative;" data--1600-top="display:block; position: fixed; top:200px;" data--1700-top="opacity:1;margin-top:0px;" data--2100-top="top:200px;" data--2200-top="opacity:0;display:none;top:-200px;" id="step4">
                             <h5>Find out What Went Wrong Intuitively</h5>
                             <p>Also dig into why it goes off with our powerful monitoring log</p>
                         </article>
                     </div>
                     <div class="animation-wrap">
-                        <svg id="app" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="280" viewBox="0 0 420 280">
+                        <svg id="app" class="skrollable skrollable-between" data-anchor-target=".hiw" data-300="opacity:0;top:800px;" data-100-top="opacity:1;top:230px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="280" viewBox="0 0 420 280">
                           <defs>
                             <rect id="subnet" width="84" height="224" rx="2"/>
                           </defs>
@@ -173,9 +173,6 @@
                                   <g id="line-7">
                                      <use x="103" y="145" xlink:href="#line"/>
                                   </g>
-                                  <!-- <g id="line-8">
-                                   <use xlink:href="#line"/>
-                                          </g> -->
                             </g>
                           </g>
                         </svg>
@@ -185,9 +182,11 @@
         </div>
         <footer>(c) 2015, CloudFielder. All rights reserved.</footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/skrollr.js"></script>
+        <!-- <script src="js/vendor/skrollr.min.js"></script> -->
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

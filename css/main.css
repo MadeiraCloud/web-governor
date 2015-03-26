@@ -251,7 +251,7 @@ body {
 
 .type-rule {
   font-family: "Consolas","Monaco","Ubuntu Mono",monospace !important;
-  font-size: 1em;
+  font-size: 1.2em;
   overflow: hidden;
   white-space: nowrap;
   word-break: break-all;
@@ -269,8 +269,8 @@ body {
     content: "_";
     position: absolute;
     right: 0.2em;
-    -webkit-animation: blink .6s linear 0 infinite;
-            animation: blink .6s linear 0 infinite; }
+    -webkit-animation: blink .8s linear 0 infinite;
+            animation: blink .8s linear 0 infinite; }
 
 .rule-resource {
   color: steelblue; }
@@ -432,32 +432,32 @@ body {
     stroke-opacity: 0; } }
 
 .hiw {
-  padding: 80px 10%; }
+  height: 2400px;
+  position: relative; }
 
 .hiw-header {
   text-align: center;
   font-size: 3em;
-  color: #2DAE86; }
+  color: #2DAE86;
+  margin: 60px 0;
+  width: 100%;
+  background: #fff;
+  line-height: 80px; }
 
 .hiw-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 140px 10%; }
 
 .text-wrap {
-  width: 60%; }
-
-.animation-wrap {
-  width: 40%;
-  position: relative; }
-  .animation-wrap #app {
-    position: absolute;
-    top: 10px;
-    left: 0; }
+  width: 560px; }
 
 .hiw-block {
-  padding: 55px 0; }
+  padding: 55px 0;
+  height: 600px;
+  width: 540px; }
   .hiw-block h5 {
     font-size: 2.4em;
     font-weight: 300;
@@ -466,6 +466,14 @@ body {
   .hiw-block p {
     font-size: 1.2em;
     color: #7F83AE; }
+
+.animation-wrap {
+  width: 460px;
+  position: relative;
+  overflow: hidden; }
+  .animation-wrap #app {
+    position: fixed;
+    right: 10%; }
 
 footer {
   width: 100%;

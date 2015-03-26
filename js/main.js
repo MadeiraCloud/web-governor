@@ -4,3 +4,5 @@ $(window).load(function() {
         $('body').removeClass("loading").addClass('loaded');
     }, 1000);
 });
+
+skrollr.init();
