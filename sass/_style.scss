@@ -62,7 +62,7 @@ body {
 
 	background: black;
 
-	animation: typing 6s steps(42, end) .6s 1;
+	animation: typing 6s steps(42, end) .7s 1;
 
 	&:after {
 		content  : "_";
@@ -229,15 +229,12 @@ $curveCount: 6;
 
 	svg {
 	  position : fixed;
+	  display  : none;
 	}
 }
 
 #app {
   right    : 10%;
-}
-
-#policy {
-	display : none;
 }
 
 #rule, #status { stroke-dasharray:200px; }

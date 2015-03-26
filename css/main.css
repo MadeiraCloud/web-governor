@@ -263,8 +263,8 @@ body {
   letter-spacing: 0em;
   box-sizing: content-box;
   background: black;
-  -webkit-animation: typing 6s steps(42, end) .6s 1;
-          animation: typing 6s steps(42, end) .6s 1; }
+  -webkit-animation: typing 6s steps(42, end) .7s 1;
+          animation: typing 6s steps(42, end) .7s 1; }
   .type-rule:after {
     content: "_";
     position: absolute;
@@ -472,13 +472,11 @@ body {
   position: relative;
   overflow: hidden; }
   .animation-wrap svg {
-    position: fixed; }
+    position: fixed;
+    display: none; }
 
 #app {
   right: 10%; }
-
-#policy {
-  display: none; }
 
 #rule, #status {
   stroke-dasharray: 200px; }
