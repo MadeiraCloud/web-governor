@@ -3,6 +3,7 @@
 $base-g: #2DAE86;
 $dark-p: #44476D;
 $base-p: #7F83AE;
+$base-r: #F46642;
 
 body {
 	@include font-major;
@@ -12,6 +13,8 @@ body {
 	
 	* { box-sizing: border-box; }
 }
+
+.container { min-height: 4400px; }
 
 .page-header {
 	height      : 60vw;
@@ -237,7 +240,48 @@ $curveCount: 6;
   right    : 10%;
 }
 
-#rule, #status { stroke-dasharray:200px; }
+#policy {
+	margin-right: 60px;
+}
+
+#rule { 
+	stroke-dasharray:200px; 
+}
+
+#status { display: none; }
+
+#status rect { fill: "#7ED321"; }
+
+#status-alert { 
+	fill         : $base-r;
+	stroke       : $base-r;
+	stroke-width : 0;
+	animation    : alert1 .5s infinite; 
+}
+
+#alert-rule {
+	stroke: #DCE1DF;
+	animation: alert2 .5s infinite;
+}
+
+@for $i from 1 through 6 {
+	#status rect:nth-child(#{$i}) {
+		animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
+	}
+}
+
+@keyframes status-check {
+	from { fill: #7ED321; stroke:green; stroke-width:0; }
+	to { fill: yellow; stroke:yellow; stroke-width: 4; }
+}
+
+@keyframes alert1 {
+	to { stroke-width: 8; }
+}
+
+@keyframes alert2 {
+	to { stroke: $base-r; }
+}
 
 
 footer {

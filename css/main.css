@@ -214,6 +214,9 @@ body {
   body * {
     box-sizing: border-box; }
 
+.container {
+  min-height: 4400px; }
+
 .page-header {
   height: 60vw;
   max-height: 800px;
@@ -478,8 +481,91 @@ body {
 #app {
   right: 10%; }
 
-#rule, #status {
+#policy {
+  margin-right: 60px; }
+
+#rule {
   stroke-dasharray: 200px; }
+
+#status {
+  display: none; }
+
+#status rect {
+  fill: "#7ED321"; }
+
+#status-alert {
+  fill: #F46642;
+  stroke: #F46642;
+  stroke-width: 0;
+  -webkit-animation: alert1 .5s infinite;
+          animation: alert1 .5s infinite; }
+
+#alert-rule {
+  stroke: #DCE1DF;
+  -webkit-animation: alert2 .5s infinite;
+          animation: alert2 .5s infinite; }
+
+#status rect:nth-child(1) {
+  -webkit-animation: status-check 1s steps(2, end) 0s infinite;
+          animation: status-check 1s steps(2, end) 0s infinite; }
+
+#status rect:nth-child(2) {
+  -webkit-animation: status-check 1s steps(2, end) 0.4s infinite;
+          animation: status-check 1s steps(2, end) 0.4s infinite; }
+
+#status rect:nth-child(3) {
+  -webkit-animation: status-check 1s steps(2, end) 0.8s infinite;
+          animation: status-check 1s steps(2, end) 0.8s infinite; }
+
+#status rect:nth-child(4) {
+  -webkit-animation: status-check 1s steps(2, end) 1.2s infinite;
+          animation: status-check 1s steps(2, end) 1.2s infinite; }
+
+#status rect:nth-child(5) {
+  -webkit-animation: status-check 1s steps(2, end) 1.6s infinite;
+          animation: status-check 1s steps(2, end) 1.6s infinite; }
+
+#status rect:nth-child(6) {
+  -webkit-animation: status-check 1s steps(2, end) 2s infinite;
+          animation: status-check 1s steps(2, end) 2s infinite; }
+
+@-webkit-keyframes status-check {
+  from {
+    fill: #7ED321;
+    stroke: green;
+    stroke-width: 0; }
+
+  to {
+    fill: yellow;
+    stroke: yellow;
+    stroke-width: 4; } }
+
+@keyframes status-check {
+  from {
+    fill: #7ED321;
+    stroke: green;
+    stroke-width: 0; }
+
+  to {
+    fill: yellow;
+    stroke: yellow;
+    stroke-width: 4; } }
+
+@-webkit-keyframes alert1 {
+  to {
+    stroke-width: 8; } }
+
+@keyframes alert1 {
+  to {
+    stroke-width: 8; } }
+
+@-webkit-keyframes alert2 {
+  to {
+    stroke: #F46642; } }
+
+@keyframes alert2 {
+  to {
+    stroke: #F46642; } }
 
 footer {
   width: 100%;

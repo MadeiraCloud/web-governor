@@ -54,7 +54,7 @@
             </header>
             <section class="hiw">
                 <header class="hiw-header skrollable skrollable-between" data-anchor-target=".hiw" data-0="position: absolute; top:0px;" data-100-top="position:fixed; top:0px;font-size:3em; margin-top:80px;" data-top="font-size:2em;margin-top:40px;" data--100-top-bottom="position: absolute;" data--2200-top="position:absolute;">How it Works</header>
-                <div class="hiw-content" id="skrollr-body">
+                <div class="hiw-content">
                     <div class="text-wrap">
                         <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="opacity:0; margin-top:200px; position:relative; display:block;" data-300-top="position: fixed; top:200px;" data-100-top="opacity:1;margin-top:0px;" data--400-top="top:200px;"data--500-top="opacity:0;display:none;top:-200px" id="step1">
                             <h5>Define Policy Rules for your Cloud Infrastructure</h5>
@@ -62,7 +62,7 @@
                             <p>Or write your own rules in a human-friendly way</p>
                         </article>
                         <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="display:none; opacity:0; margin-top:200px; position:relative;" data--500-top="display:block; position: fixed; top:200px;" data--600-top="opacity:1;margin-top:0px;" data--1000-top="top:200px;" data--1100-top="opacity:0;display:none;top:-200px;" id="step2">
-                            <h5>Policy Monitored around-the-clock, While you Sit Back and Relax</h5>
+                            <h5>Policy Monitored <br/>around-the-clock, <br/>While you Sit Back and Relax</h5>
                             <p>Periodical monitoring report</p>
                         </article>
                         <article class="hiw-block skrollable skrollable-between" data-anchor-target=".hiw" data-0="display:none; opacity:0; margin-top:200px; position:relative;" data--1100-top="display:block; position: fixed; top:200px;" data--1200-top="opacity:1;margin-top:0px;" data--1600-top="top:200px;" data--1700-top="opacity:0;display:none;top:-200px;" id="step3">
@@ -75,7 +75,7 @@
                         </article>
                     </div>
                     <div class="animation-wrap">
-                        <svg id="app" class="skrollable skrollable-between" data-anchor-target=".hiw" data-300-top="display:block;opacity:0;top:800px;" data-100-top="opacity:1;top:230px;transform:scale(1);" data--200-top="opacity:0.6;transform:scale(.8);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="280" viewBox="0 0 420 280">
+                        <svg id="app" class="skrollable skrollable-between" data-anchor-target=".hiw" data-300-top="display:block;opacity:0;top:800px;" data-100-top="opacity:1;top:230px;transform:scale(1);" data--200-top="opacity:0.6;transform:scale(.8);" data--300-top="opacity:0.6;transform:scale(.8);" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="280" viewBox="0 0 420 280">
                           <defs>
                             <rect id="subnet" width="84" height="224" rx="2"/>
                           </defs>
@@ -177,7 +177,7 @@
                             </g>
                           </g>
                         </svg>
-                        <svg id="policy" class="skrollable skrollable-between" data-anchor-target=".hiw" data-50-top="display:block;right[swing]:-50%" data--150-top="top:230px;right[swing]:13%" xmlns="http://www.w3.org/2000/svg" width="242" height="266" viewBox="0 0 242 266" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg id="policy" class="skrollable skrollable-between" data-anchor-target=".hiw" data-50-top="display:block;right[swing]:-50%" data--150-top="top:230px;right[swing]:10%;" data--300-top="top:230px;transform:scale(1);" xmlns="http://www.w3.org/2000/svg" width="242" height="266" viewBox="0 0 242 266" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <path id="policy-wrap" d="M0 1.992C0 .892.893 0 2.003 0h235.994C239.103 0 240 .904 240 1.992v260.016c0 1.1-.893 1.992-2.003 1.992H2.003C.897 264 0 263.096 0 262.008V1.992z"/>
                             </defs>
@@ -191,13 +191,14 @@
                                     </tspan>
                                 </text>
                                 <path stroke="#C2D7CC" stroke-width="2" d="M17 42h208" stroke-linecap="square"/>
-                                <g id="status" class="skrollable skrollable-between" data-anchor-target=".hiw" data--500-top="stroke-dashoffset:200;" data--660-top="stroke-dashoffset:0;">
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 81.215v-10"/>
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 111.215v-10"/>
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 141.215v-10"/>
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 171.215v-10"/>
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 201.215v-10"/>
-                                  <path stroke="#7ED321" stroke-width="10" d="M211 231.215v-10"/>
+                                <g id="status" class="skrollable skrollable-between" data-anchor-target=".hiw" data--300-top="display:none; opacity:0;" data--550-top="display:block;" data--660-top="opacity:1;">
+                                  <rect x="211" y="70.215" width="10" height="10"></rect>
+                                  <rect x="211" y="100.215" width="10" height="10"></rect>
+                                  <rect x="211" y="130.215" width="10" height="10" ></rect>
+                                  <rect x="211" y="160.215" width="10" height="10"></rect>
+                                  <rect x="211" y="190.215" width="10" height="10"></rect>
+                                  <rect x="211" y="220.215" width="10" height="10"></rect>
+                                  <rect id="status-alert" x="211" y="130.215" width="10" height="10" class="skrollable skrollable-between" data-anchor-target=".hiw" data--1000-top="display:none;" data--1200-top="display:block;"></rect>
                                 </g>
                                 <g id="rule">
                                   <path stroke="#DCE1DF" stroke-width="10" d="M17 76h168" class="skrollable skrollable-between" data-anchor-target=".hiw" data--200-top="stroke-dashoffset:200;" data--240-top="stroke-dashoffset:0;" />  
@@ -206,8 +207,28 @@
                                   <path stroke="#DCE1DF" stroke-width="10" d="M17 166h168" class="skrollable skrollable-between" data-anchor-target=".hiw" data--310-top="stroke-dashoffset:200;" data--350-top="stroke-dashoffset:0;" />
                                   <path stroke="#DCE1DF" stroke-width="10" d="M17 196h168" class="skrollable skrollable-between" data-anchor-target=".hiw" data--360-top="stroke-dashoffset:200;" data--400-top="stroke-dashoffset:0;" />
                                   <path stroke="#DCE1DF" stroke-width="10" d="M17 226h168" class="skrollable skrollable-between" data-anchor-target=".hiw" data--410-top="stroke-dashoffset:200;" data--450-top="stroke-dashoffset:0;" />
+                                  <path id="alert-rule" stroke-width="10" d="M17 136h168" class="skrollable skrollable-between" data-anchor-target=".hiw"  data--1000-top="display:none;" data--1200-top="display:block;"/>
                                 </g> 
                             </g>
+                        </svg>
+                        <svg id="alert-mail" class="skrollable skrollable-between" data-anchor-target=".hiw"  data--1000-top="display:none;" data--1200-top="display:block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="180" viewBox="0 0 260 180" version="1.1">
+                          <defs>
+                            <rect id="mail-wrap" width="216" height="134" x="0" y="0" rx="4"/>
+                          </defs>
+                          <g transform="translate(-934 -2025) translate(938 2029)">
+                              <mask id="mask" fill="#fff">
+                                <use xlink:href="#mail-wrap"/>
+                              </mask>
+                              <use fill="#F6EAE6" stroke="#F78D71" stroke-width="4" xlink:href="#mail-wrap"/>
+                              
+                              <path fill="#F6EAE6" stroke="#F78D71" stroke-width="4" d="M215.696 181.797c1.794 0 2.22-1.035.953-2.31l-106.54-107.2c-1.268-1.276-3.325-1.275-4.59 0l-106.54 107.2c-1.27 1.276-.848 2.31.953 2.31h215.763z" mask="url(#mask)"/>
+                              <path fill="#FFFBFA" stroke="#F78D71" stroke-width="4" d="M215.696-.187c1.794 0 2.22 1.036.953 2.31l-106.54 107.2c-1.268 1.277-3.325 1.275-4.59 0L-1.02 2.124C-2.29.847-1.87-.187-.068-.187h215.763z" mask="url(#mask)"/>
+                              <path stroke="#F78D71" stroke-width="4" d="M 10 134 L 180 134"/>
+                          </g>
+                          <g transform="translate(184 101)">
+                              <circle cx="28.5" cy="28.5" r="28.5" fill="#F46642" stroke="#fff" stroke-width="5"/>
+                              <path fill="#fff" d="M25.808 33.388v-16.2h4.824v16.2h-4.824zm0 9.612v-5.436h4.824V43h-4.824z"/>
+                          </g>
                         </svg>
                     </div>
                 </div>

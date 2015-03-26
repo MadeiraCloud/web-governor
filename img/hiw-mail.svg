@@ -1,0 +1,17 @@
+<svg id="alert-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="180" viewBox="0 0 260 180" version="1.1">
+  <defs>
+    <rect id="mail-wrap" width="216" height="134" x="0" y="0" rx="4"/>
+  </defs>
+  <g transform="translate(-934 -2025) translate(938 2029)">
+      <mask id="mask" fill="#fff">
+        <use xlink:href="#mail-wrap"/>
+      </mask>
+      <use fill="#F6EAE6" stroke="#F78D71" stroke-width="4" xlink:href="#mail-wrap"/>
+      
+      <path fill="#F6EAE6" stroke="#F78D71" stroke-width="4" d="M215.696 181.797c1.794 0 2.22-1.035.953-2.31l-106.54-107.2c-1.268-1.276-3.325-1.275-4.59 0l-106.54 107.2c-1.27 1.276-.848 2.31.953 2.31h215.763z" mask="url(#mask)"/>
+      <path fill="#FFFBFA" stroke="#F78D71" stroke-width="4" d="M215.696-.187c1.794 0 2.22 1.036.953 2.31l-106.54 107.2c-1.268 1.277-3.325 1.275-4.59 0L-1.02 2.124C-2.29.847-1.87-.187-.068-.187h215.763z" mask="url(#mask)"/>
+    <path stroke="#F78D71" stroke-width="4" d="M 10 134 L 180 134"/></g><g transform="translate(184 101)">
+      <circle cx="28.5" cy="28.5" r="28.5" fill="#F46642" stroke="#fff" stroke-width="5"/>
+      <path fill="#fff" d="M25.808 33.388v-16.2h4.824v16.2h-4.824zm0 9.612v-5.436h4.824V43h-4.824z"/>
+    </g>
+</svg>
