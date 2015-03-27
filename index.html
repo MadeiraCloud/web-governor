@@ -189,12 +189,17 @@
                                     </tspan>
                                 </text>
                                 <path stroke="#C2D7CC" stroke-width="2" d="M17 42h208" stroke-linecap="square"/>
+                                <g id="status" class="skrollable skrollable-between" data-anchor-target=".hiw" data--300-top="display:none; opacity:0;" data--550-top="display:block;" data--660-top="opacity:1;">
+                                  <rect x="211" y="70.215" width="10" height="10"></rect>
+                                  <rect x="211" y="100.215" width="10" height="10"></rect>
+                                  <rect x="211" y="130.215" width="10" height="10" ></rect>
+                                  <rect id="status-alert" x="211" y="130.215" width="10" height="10" class="skrollable skrollable-between" data-anchor-target=".hiw" data--1000-top="display:none;" data--1200-top="display:block;"></rect>
+                                </g>
                                 <g id="rule">
-                                  <text fill="#DCE1DF" stroke-width="0" font-size="12px" x="17" y="80">
-                                  <tspan x="17" >instance.tag=web should be in</tspan>
-                                  <tspan x="17" dy="20">subnet.type=publicrds should be not</tspan>
-                                  <tspan x="17" dy="20">accessible from Internetonly accept</tspan>
-                                  <tspan x="17" dy="20">SSH (22) connection from 68.98.26.15</tspan>
+                                  <text fill="#9CA5A1" stroke-width="0" font-size="8px" x="17" y="77">
+                                  <tspan x="17" >instance.tag=web should be in subnet.type=public</tspan>
+                                  <tspan x="17" dy="31">rds should be not accessible from Internet</tspan>
+                                  <tspan x="17" dy="31">only accept SSH (22) connection from 68.98.26.15</tspan>
                                   </text>
                                 </g>
                             </g>
