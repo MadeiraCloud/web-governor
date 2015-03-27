@@ -22,7 +22,10 @@ body {
 	}
 }
 
-.container { min-height: 100%; background: $dark-p; }
+.container {
+	min-height : 100%;
+	background : $dark-p;
+}
 
 .page-header {
 	height      : 60vw;
@@ -166,17 +169,14 @@ body {
 	width      : 50vw;
 	max-width  : 600px;
 	min-width  : 370px;
-	height     : 12vw;
-	max-height : 144px;
-	min-height : 80px;
-	padding    : 2vw 1.5vw 0 1.5vw;
+	padding    : 2vw 1.5vw;
 	margin     : 2.5vw auto;
 	background : rgba(255,255,255,.1);
 	text-align : left;
 
 	label { color: #fff; }
 
-	.input-wrap { margin-top: .3vw; display: flex; }
+	.input-wrap { display: block; }
 	.input-button { display: inline-block; }
 
 	.email,.button {
@@ -186,6 +186,9 @@ body {
 		max-height    : 60px;
 		min-height    : 32px;
 		font-size     : 1em;
+		-webkit-appearance : none;
+		-moz-appearance : none;
+		appearance : none;
 	}
 
 	.email {
@@ -316,8 +319,9 @@ $curveCount: 6;
 }
 
 .hiw-content {
-	display  : flex;
-	padding  : 140px 10%;
+	padding   : 140px;
+	max-width : 1280px;
+	margin    : auto;
 }
 
 .text-wrap {
@@ -327,7 +331,7 @@ $curveCount: 6;
 .hiw-block {
 	padding   : 55px 0;
 	height    : 550px;
-	width     : 540px;
+	width     : 620px;
 	// margin : 0 auto;
 
 	h5 { font-size: 2.2em; font-weight: 300; color: $dark-p; margin: 10px 0 0 0; }
@@ -459,14 +463,12 @@ $curveCount: 6;
 }
 
 .subscribe {
-	width     : 100%;
-	height    : 500px;
-	//padding : 25% 0;
+	width   : 100%;
+	padding : 1px 0;
 
 	h3 { text-align: center; font-size: 2.4em; color: #fff; font-weight: 300; margin-top:80px; }
 
 	.mc_embed_signup {
-	  padding : 3vw 2vw 0 2vw;
 	  margin  : 8% auto;
 	}
 }
@@ -483,6 +485,11 @@ footer {
 
 .mc_embed_signup {
 	form {
+		&:after {
+			content : " ";
+			display : block;
+			clear   : both;
+		}
 		vertical-align : middle;
 		input { float:left; }
 		.input-button { float:left; }
