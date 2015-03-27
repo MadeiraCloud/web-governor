@@ -29,6 +29,7 @@ body {
 	width       : 100%;
 	position    : relative;
 	padding-top : 8vw;
+	overflow-x  : hidden;
 
 	text-align : center;
 	color      : #fff;
@@ -484,6 +485,15 @@ footer {
 		vertical-align : middle;
 		input { float:left; }
 		.input-button { float:left; }
+	}
+}
+
+.mobile .hiw {
+	&:before {
+		content : "";
+		width   : 100%;
+		display : block;
+		height  : 1px;
 	}
 }
 

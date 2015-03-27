@@ -12,8 +12,13 @@ $(window).load(function() {
     , speed : 90
     , delay : 0.2
     , blink : 500
-  })
+  });
 
-  skrollr.init();
+  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    $("body").addClass("mobile");
+  } else {
+    skrollr.init();
+  }
+
 });
 
