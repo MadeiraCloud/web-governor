@@ -17,7 +17,7 @@ $(window).load(function() {
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
     $("body").addClass("mobile");
   } else {
-    skrollr.init();
+    skrollr.init({forceHeight:false});
   }
 
 });

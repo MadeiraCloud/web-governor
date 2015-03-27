@@ -11,6 +11,7 @@ body {
 	font-weight : 300;
 	font-size   : 16px;
 	overflow-x  : hidden;
+	background  : #003;
 
 	* {
 		-webkit-box-sizing: border-box;
@@ -159,7 +160,7 @@ body {
 // 	100% { opacity : 0; }
 // }
 
-#mc_embed_signup {
+.mc_embed_signup {
 	color      : $base-g;
 	width      : 50vw;
 	max-width  : 600px;
@@ -457,17 +458,16 @@ $curveCount: 6;
 }
 
 .subscribe {
-	width   : 100%;
-	height  : 500px;
-	padding : 25% 0;
+	width     : 100%;
+	height    : 500px;
+	//padding : 25% 0;
 
-	h3 { text-align: center; font-size: 2.4em; color: #fff; font-weight: 300; }
+	h3 { text-align: center; font-size: 2.4em; color: #fff; font-weight: 300; margin-top:80px; }
 
-	#mc_embed_signup {
+	.mc_embed_signup {
 	  padding : 3vw 2vw 0 2vw;
 	  margin  : 8% auto;
 	}
-
 }
 
 footer {
@@ -480,7 +480,7 @@ footer {
 	background : #003;
 }
 
-#mc_embed_signup {
+.mc_embed_signup {
 	form {
 		vertical-align : middle;
 		input { float:left; }
@@ -488,15 +488,28 @@ footer {
 	}
 }
 
-.mobile .hiw {
-	&:before {
+.mobile {
+	.hiw:before {
 		content : "";
 		width   : 100%;
 		display : block;
 		height  : 1px;
 	}
+
+	.subscribe {
+		height : auto;
+		.mc_embed_signup {
+			margin-bottom : 80px;
+		}
+
+		&:after {
+			content : " ";
+			display : block;
+			height  : 1px;
+		}
+	}
 }
 
 @media (max-width:1024px) {
-	#mc_embed_signup .button { font-size: 1em; }
+	.mc_embed_signup .button { font-size: 1em; }
 }
