@@ -11,6 +11,7 @@ $(window).load(function() {
     speed_vary : false
     , speed : 90
     , delay : 0.2
+    , blink : 500
   })
 
   skrollr.init();
