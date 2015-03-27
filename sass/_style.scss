@@ -366,7 +366,7 @@ $curveCount: 6;
 #status rect { fill: "#7ED321"; }
 
 #status-alert {
-	fill         : $base-r;
+	fill         : $base-r !important;
 	stroke       : $base-r;
 	stroke-width : 0;
 	-webkit-animation    : alert1 .5s infinite;
