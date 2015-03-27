@@ -12,6 +12,7 @@ body {
 	font-size   : 16px;
 	overflow-x  : hidden;
 	background  : #003;
+	margin      : 0;
 
 	* {
 		-webkit-box-sizing: border-box;
@@ -329,7 +330,7 @@ $curveCount: 6;
 	width     : 540px;
 	// margin : 0 auto;
 
-	h5 { font-size: 2.4em; font-weight: 300; color: $dark-p; margin: 10px 0 0 0; }
+	h5 { font-size: 2.2em; font-weight: 300; color: $dark-p; margin: 10px 0 0 0; }
 	p { font-size: 1.2em; color: $base-p; }
 }
 
@@ -507,6 +508,27 @@ footer {
 			display : block;
 			height  : 1px;
 		}
+	}
+
+	.mobile-hide { display : none; }
+
+
+	.hiw {
+		height : auto;
+		padding-bottom : 25px;
+	}
+
+	.hiw-content {
+		padding   : 0 10%;
+		.text-wrap { width : auto; }
+	}
+
+	.hiw-block {
+		width  : auto;
+		height : auto;
+
+		h5 { font-size : 2em; }
+		p  { font-size : 1.5em; margin : 0.7em 0; }
 	}
 }
 
