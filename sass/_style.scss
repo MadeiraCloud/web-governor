@@ -10,8 +10,13 @@ body {
 
 	font-weight      : 300;
 	font-size        : 16px;
-	
-	* { box-sizing: border-box; }
+
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 }
 
 .container { min-height: 100%; background: $dark-p; }
@@ -23,19 +28,32 @@ body {
 	width       : 100%;
 	position    : relative;
 	padding-top : 8vw;
-	
+
 	text-align : center;
 	color      : #fff;
 
-	background-image : linear-gradient(0deg, #5A5F95 0%, #2DC88B 100%);
-
+	background: #2dc88b;
+	background: -moz-linear-gradient(top, #2dc88b 0%, #5a5f95 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2dc88b), color-stop(100%,#5a5f95));
+	background: -webkit-linear-gradient(top, #2dc88b 0%,#5a5f95 100%);
+	background: -o-linear-gradient(top, #2dc88b 0%,#5a5f95 100%);
+	background: -ms-linear-gradient(top, #2dc88b 0%,#5a5f95 100%);
+	background: linear-gradient(to bottom, #2dc88b 0%,#5a5f95 100%);
 
 	h3 { font-size: 4em; font-weight: 100;  line-height: 2em; margin: 0; }
-	h5 { font-size: 1.4em; font-weight: 300; opacity: .7;}
+	h5 { font-size: 1.4em; font-weight: 300; opacity: .7; margin-bottom : 15px; }
 
-	.page-header-content { 
-		transition : opacity .4s ease-in; 
-		h5 { transition : margin-top .4s ease-in; }
+	.page-header-content {
+		-webkit-transition : opacity .4s ease-in;
+		-moz-transition : opacity .4s ease-in;
+		-ms-transition : opacity .4s ease-in;
+		transition : opacity .4s ease-in;
+		h5 {
+			-webkit-transition : margin-top .4s ease-in;
+			-moz-transition : margin-top .4s ease-in;
+			-ms-transition : margin-top .4s ease-in;
+			transition : margin-top .4s ease-in;
+		}
 	}
 
 	.loading & .page-header-content {
@@ -43,9 +61,9 @@ body {
 		h5 { margin-top: 20px; }
 	}
 
-	.loaded & .page-header-content { 
-		opacity: 1; 
-		h5 { margin-top: 0; } 
+	.loaded & .page-header-content {
+		opacity: 1;
+		h5 { margin-top: 0; }
 	}
 }
 
@@ -55,45 +73,74 @@ body {
 	overflow       : hidden;
 	white-space    : nowrap;
 	word-break     : break-all;
-	width          : 23.2em;
 	padding        : .3em .8em;
-	margin         : 4vw auto;
+	margin         : 0px auto 25px;
 	position       : relative;
 	color          : lime;
 	letter-spacing : 0em;
 	box-sizing     : content-box;
 
-	background: black;
+	background: #111;
+	display: inline-block;
+	min-width : 1px;
 
-	animation: typing 6s steps(42, end) .7s 1;
+	// animation: typing 6s steps(42, end) .7s 1;
 
-	&:after {
-		content  : "_";
-		position : absolute;
-		right    : 0.2em;
-		
-		animation: blink .8s linear 0 infinite;
+	.t-caret {
+		-webkit-animation: blink 1s linear 0 infinite;
+		-moz-animation: blink 1s linear 0 infinite;
+		-ms-animation: blink 1s linear 0 infinite;
+		animation: blink 1s linear 0 infinite;
+		background : lime;
+		width : 0.25em;
+		color : transparent;
+		display: inline-block;
+		margin : 0 0 0 3px;
 	}
+
+	// &:after {
+	// 	content  : "_";
+	// 	position : absolute;
+	// 	right    : 0.2em;
+
+	// }
 }
 
 .rule-resource { color: steelblue; }
 .rule-select { color: orange; }
 
-.cursor {
-	position : absolute;
-	right    : 0em;
-    height : 1em;
-    width  : .8em;
-	
-	background : black;
-}
+// .cursor {
+// 	position : absolute;
+// 	right    : 0em;
+//     height : 1em;
+//     width  : .8em;
 
-@keyframes typing {
-	from { width: 0; }
-}
+// 	background : black;
+// }
 
 @keyframes blink {
-	to { opacity: 0; }
+	0%  { opacity : 1; }
+	49% { opacity : 1; }
+	50% { opacity : 0; }
+	100% { opacity : 0; }
+}
+@-webkit-keyframes blink {
+	0%  { opacity : 1; }
+	49% { opacity : 1; }
+	50% { opacity : 0; }
+	100% { opacity : 0; }
+}
+@-moz-keyframes blink {
+	0%  { opacity : 1; }
+	49% { opacity : 1; }
+	50% { opacity : 0; }
+	100% { opacity : 0; }
+}
+@-ms-keyframes blink {
+	0%  { opacity : 1; }
+	49% { opacity : 1; }
+	50% { opacity : 0; }
+	100% { opacity : 0; }
 }
 
 #mc_embed_signup {
@@ -108,9 +155,9 @@ body {
 	margin     : 2.5vw auto;
 	background : rgba(255,255,255,.1);
 	text-align : left;
-	
+
 	label { color: #fff; }
-	
+
 	.input-wrap { margin-top: .3vw; display: flex; }
 	.input-button { display: inline-block; }
 
@@ -126,7 +173,11 @@ body {
 	.email {
 		width      : 70%;
 		padding    : 1em;
-		transition : all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+
 		border     : 0 solid transparent;
 		background : rgba(255,255,255,.8);
 
@@ -134,8 +185,8 @@ body {
 			background : #fff;
 		}
 
-		&:focus { 
-			border-bottom : 4px solid $base-g; 
+		&:focus {
+			border-bottom : 4px solid $base-g;
 			outline       : none;
 			box-shadow    : 0 0 5px transparentize(lighten($base-g,10%),.2);
 			background    : #fff;
@@ -168,32 +219,62 @@ body {
 $curveCount: 6;
 
 .curve {
-  stroke-width: 1px; 
+  stroke-width: 1px;
   stroke-opacity: 0;
-  
+
   path {
-   transform-origin: center 60px; 
+   transform-origin: center 60px;
   }
-  
+
   @for $i from 1 through $curveCount {
     & path:nth-child(#{$i}) {
+        -webkit-animation: curve 6s linear ($i - 1)*1.2s infinite;
+        -moz-animation: curve 6s linear ($i - 1)*1.2s infinite;
+        -ms-animation: curve 6s linear ($i - 1)*1.2s infinite;
         animation: curve 6s linear ($i - 1)*1.2s infinite;
     }
   }
 }
 
- @keyframes curve {
+@-webkit-keyframes curve {
+  0% { -webkit-transform: none; stroke-opacity:0; }
+  50% { -webkit-transform: rotateX(360deg) scaleY(.8);
+        stroke-opacity: .5; }
+   70% { /* -webkit-transform: skewY(-2deg); */ }
+  100% { -webkit-transform: none; stroke-opacity:0;}
+}
+@-moz-keyframes curve {
+  0% { -moz-transform: none; stroke-opacity:0; }
+  50% { -moz-transform: rotateX(360deg) scaleY(.8);
+        stroke-opacity: .5; }
+   70% { /* -moz-transform: skewY(-2deg); */ }
+  100% { -moz-transform: none; stroke-opacity:0;}
+}
+@-ms-keyframes curve {
+  0% { -ms-transform: none; stroke-opacity:0; }
+  50% { -ms-transform: rotateX(360deg) scaleY(.8);
+        stroke-opacity: .5; }
+   70% { /* -ms-transform: skewY(-2deg); */ }
+  100% { -ms-transform: none; stroke-opacity:0;}
+}
+@keyframes curve {
   0% { transform: none; stroke-opacity:0; }
   50% { transform: rotateX(360deg) scaleY(.8);
         stroke-opacity: .5; }
    70% { /* transform: skewY(-2deg); */ }
   100% { transform: none; stroke-opacity:0;}
-} 
+}
 
 .hiw {
 	height  : 2700px;
 	position : relative;
-	background-image: linear-gradient(-180deg, #EDEAF6 0%, #E6FCF3 100%);
+	background: #edeaf6;
+	background: -moz-linear-gradient(top,  #edeaf6 0%, #e6fcf3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edeaf6), color-stop(100%,#e6fcf3));
+	background: -webkit-linear-gradient(top,  #edeaf6 0%,#e6fcf3 100%);
+	background: -o-linear-gradient(top,  #edeaf6 0%,#e6fcf3 100%);
+	background: -ms-linear-gradient(top,  #edeaf6 0%,#e6fcf3 100%);
+	background: linear-gradient(to bottom,  #edeaf6 0%,#e6fcf3 100%);
 }
 
 .hiw-header {
@@ -207,7 +288,7 @@ $curveCount: 6;
 
 .hiw-content {
 	display  : flex;
-	padding  : 140px 10%; 
+	padding  : 140px 10%;
 }
 
 .text-wrap {
@@ -243,51 +324,106 @@ $curveCount: 6;
 	margin-right: 60px;
 }
 
-#rule { 
-	stroke-dasharray:200px; 
+#rule {
+	stroke-dasharray:200px;
 }
 
 #status { display: none; }
 
 #status rect { fill: "#7ED321"; }
 
-#status-alert { 
+#status-alert {
 	fill         : $base-r;
 	stroke       : $base-r;
 	stroke-width : 0;
-	animation    : alert1 .5s infinite; 
+	-webkit-animation    : alert1 .5s infinite;
+	-moz-animation    : alert1 .5s infinite;
+	-ms-animation    : alert1 .5s infinite;
+	animation    : alert1 .5s infinite;
 }
 
 #alert-rule {
 	stroke: #DCE1DF;
+	-webkit-animation: alert2 .5s infinite;
+	-moz-animation: alert2 .5s infinite;
+	-ms-animation: alert2 .5s infinite;
 	animation: alert2 .5s infinite;
 }
 
 #line-alert path {
 	stroke-dasharray : 400px;
 	stroke-dashoffset: 400px;
+	-webkit-animation        : alert3 1s infinite;
+	-moz-animation        : alert3 1s infinite;
+	-ms-animation        : alert3 1s infinite;
 	animation        : alert3 1s infinite;
 }
 
 @for $i from 1 through 6 {
 	#status rect:nth-child(#{$i}) {
+		-webkit-animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
+		-moz-animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
+		-ms-animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
 		animation: status-check 1s steps(2,end) ($i - 1)*0.4s infinite;
 	}
 }
 
+@-webkit-keyframes status-check {
+	from { fill: #7ED321; stroke:green; stroke-width:0; }
+	to { fill: yellow; stroke:yellow; stroke-width: 4; }
+}
+
+@-moz-keyframes status-check {
+	from { fill: #7ED321; stroke:green; stroke-width:0; }
+	to { fill: yellow; stroke:yellow; stroke-width: 4; }
+}
+@-ms-keyframes status-check {
+	from { fill: #7ED321; stroke:green; stroke-width:0; }
+	to { fill: yellow; stroke:yellow; stroke-width: 4; }
+}
 @keyframes status-check {
 	from { fill: #7ED321; stroke:green; stroke-width:0; }
 	to { fill: yellow; stroke:yellow; stroke-width: 4; }
 }
 
+@-webkit-keyframes alert1 {
+	to { stroke-width: 8; }
+}
+@-moz-keyframes alert1 {
+	to { stroke-width: 8; }
+}
+@-ms-keyframes alert1 {
+	to { stroke-width: 8; }
+}
 @keyframes alert1 {
 	to { stroke-width: 8; }
 }
 
+@-webkit-keyframes alert2 {
+	to { stroke: $base-r; }
+}
+@-moz-keyframes alert2 {
+	to { stroke: $base-r; }
+}
+@-ms-keyframes alert2 {
+	to { stroke: $base-r; }
+}
 @keyframes alert2 {
 	to { stroke: $base-r; }
 }
 
+@-webkit-keyframes alert3 {
+	// to { stroke-width: 7; }
+	to { stroke-dashoffset:0; }
+}
+@-moz-keyframes alert3 {
+	// to { stroke-width: 7; }
+	to { stroke-dashoffset:0; }
+}
+@-ms-keyframes alert3 {
+	// to { stroke-width: 7; }
+	to { stroke-dashoffset:0; }
+}
 @keyframes alert3 {
 	// to { stroke-width: 7; }
 	to { stroke-dashoffset:0; }
