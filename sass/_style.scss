@@ -48,7 +48,7 @@ body {
 	background: linear-gradient(to bottom, #2dc88b 0%,#5a5f95 100%);
 
 	h3 { font-size: 4em; font-weight: 100;  line-height: 2em; margin: 0; }
-	h5 { font-size: 1.4em; font-weight: 300; opacity: .7; margin-bottom : 15px; }
+	h5 { font-size: 1.4em; font-weight: 300; opacity: .7; margin-bottom : 45px; }
 
 	.page-header-content {
 		-webkit-transition : opacity .4s ease-in;
@@ -118,51 +118,10 @@ body {
 			top        : 0;
 		}
 	}
-
-	// &:after {
-	// 	content  : "_";
-	// 	position : absolute;
-	// 	right    : 0.2em;
-
-	// }
 }
 
 .rule-resource { color: steelblue; }
 .rule-select { color: orange; }
-
-// .cursor {
-// 	position : absolute;
-// 	right    : 0em;
-//     height : 1em;
-//     width  : .8em;
-
-// 	background : black;
-// }
-
-// @keyframes blink {
-// 	0%  { opacity : 1; }
-// 	49% { opacity : 1; }
-// 	50% { opacity : 0; }
-// 	100% { opacity : 0; }
-// }
-// @-webkit-keyframes blink {
-// 	0%  { opacity : 1; }
-// 	49% { opacity : 1; }
-// 	50% { opacity : 0; }
-// 	100% { opacity : 0; }
-// }
-// @-moz-keyframes blink {
-// 	0%  { opacity : 1; }
-// 	49% { opacity : 1; }
-// 	50% { opacity : 0; }
-// 	100% { opacity : 0; }
-// }
-// @-ms-keyframes blink {
-// 	0%  { opacity : 1; }
-// 	49% { opacity : 1; }
-// 	50% { opacity : 0; }
-// 	100% { opacity : 0; }
-// }
 
 .mc_embed_signup {
 	color      : $base-g;
@@ -174,7 +133,7 @@ body {
 	background : rgba(255,255,255,.1);
 	text-align : left;
 
-	label { color: #fff; }
+	label { color: #fff; font-size: 1em; display: inline-block; margin-bottom: 10px;}
 
 	.input-wrap { display: block; }
 	.input-button { display: inline-block; }
@@ -324,14 +283,15 @@ $curveCount: 6;
 	margin    : auto;
 }
 
-.text-wrap {
-	width   : 560px;
-}
+// .text-wrap {
+// 	width   : 40%;
+// }
 
 .hiw-block {
 	padding   : 55px 0;
 	height    : 550px;
-	width     : 620px;
+	width   : 40%;
+	// width  : 620px;
 	// margin : 0 auto;
 
 	h5 { font-size: 2.2em; font-weight: 300; color: $dark-p; margin: 10px 0 0 0; }
@@ -464,7 +424,7 @@ $curveCount: 6;
 
 .subscribe {
 	width   : 100%;
-	padding : 1px 0;
+	padding : 100px 0;
 
 	h3 { text-align: center; font-size: 2.4em; color: #fff; font-weight: 300; margin-top:80px; }
 
